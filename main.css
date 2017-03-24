@@ -1,0 +1,195 @@
+html {
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+
+body {
+   margin: 0px;
+   padding: 0px;
+   height: 100%;
+   min-height: 100%;
+   width: 100%;
+   background-image: url("img/waves3.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+header {
+height: 70px;
+width: 100%;
+color: white;
+display: block;
+background-color: rgba(0, 0, 0, 0.5);
+position: fixed;
+top:0;
+margin: 0 auto;
+padding: 0;
+}
+
+
+header a {
+  height: 100%;
+  width: 50%;
+  text-decoration: none;
+  color: white;
+}
+
+
+header a h1 {
+height: 100%;
+display: inline-block;
+font-family: 'Amatic SC', serif;
+font-size: 50px;
+margin: 0 0 0 20px;
+display: inline-block;
+}
+
+nav {
+  height: 70px;
+  width: auto;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+nav a {
+  height: 70px;
+  width: 100px;
+  display: inline-block;
+  float: left;
+  font-family: 'Amatic SC', serif;
+  font-size: 30px;
+}
+
+article {
+width: 100%;
+height: 50%;
+display: block;
+margin-top: 100px;
+margin-left: auto;
+margin-right: auto;
+white-space: nowrap;
+text-align: center;
+}
+
+article .photolink {
+  height: 100%;
+  width: 30%;
+  margin: 0px 10px 0px 10px;
+  display: inline-block;
+  border-radius: 15px;
+  border: 4px groove lightblue;
+  text-decoration: none;
+}
+
+.linkveil {
+  opacity: 0.0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.linkveil:hover {
+  opacity: 1.0;
+
+}
+
+
+article #about {
+  background-image: url("img/coffee.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+article #work {
+  background-image: url("img/maraj.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+article #contact {
+  background-image: url("img/letter.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*contact page */
+
+/*#form_h1 {
+  height: 100px;
+  width: 50%;
+  display: inlint-block;
+  font-family: 'Amatic SC', serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+
+} */
+
+fieldset {
+  width: 30%;
+  margin: 0 auto;
+  color: white;
+  background-color: green:
+  border: 2px solid blue;
+}
+
+label, legend, #contact_p  {
+  font-family: 'Amatic SC', serif;
+  font-size: 25px;
+  color: white;
+
+}
+
+/*About page */
+
+article_about {
+width: 100%;
+height: 100%;
+display: block;
+margin-top: 70px;
+margin-left: auto;
+margin-right: auto;
+white-space: nowrap;
+background-color: purple;
+text-align: center;
+}
+
+blockquote {
+  width: 100%;
+  color: white;
+  display: block;
+  text-align: center;
+  font-family: 'Amatic SC', serif;
+  font-size: 40px;
+}
+
+ol {
+  margin: 0 auto;
+  list-style-type: upper-roman;
+  display: inline-block;
+}
+
+ol li {
+  color: white;
+  font-family: 'Amatic SC', serif;
+  font-size: 50px;
+
+}
+
+ol li a {
+  color: white;
+  border-bottom: 1px dashed white;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 2px;
+
+}
