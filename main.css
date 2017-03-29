@@ -1,25 +1,31 @@
-html {
-   margin: 0px;
-   height: 100%;
-   width: 100%;
-}
-
-body {
+html, body {
    margin: 0px;
    padding: 0px;
    height: 100%;
-   min-height: 100%;
    width: 100%;
-   background-image: url("img/waves3.jpg");
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
+   background-color: hsl(150, 65%, 68%);
+   background-color: #78E2AD;
 }
+
+
+p {
+  font-family: 'Amatic SC', serif;
+  color: black;
+  font-size: 35px;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+
+/******* HEADER *********/
 
 header {
 height: 70px;
 width: 100%;
 color: white;
+/*text-shadow: 1px 1px 2px purple, 0 0 25px purple, 0 0 5px purple;*/
 display: block;
 background-color: rgba(0, 0, 0, 0.5);
 position: fixed;
@@ -46,6 +52,13 @@ margin: 0 0 0 20px;
 display: inline-block;
 }
 
+#quote {
+  margin: 0;
+  position: fixed;
+  bottom: 0;
+
+}
+/******* NAVIGATION *********/
 nav {
   height: 70px;
   width: auto;
@@ -66,130 +79,158 @@ nav a {
 
 article {
 width: 100%;
-height: 50%;
 display: block;
-margin-top: 100px;
+padding-top: 90px;
 margin-left: auto;
 margin-right: auto;
-white-space: nowrap;
 text-align: center;
 }
 
-article .photolink {
-  height: 100%;
-  width: 30%;
-  margin: 0px 10px 0px 10px;
+.img_wrap {
+  height: 25%;
   display: inline-block;
-  border-radius: 15px;
-  border: 4px groove lightblue;
-  text-decoration: none;
+  margin: 5px;
 }
 
-.linkveil {
-  opacity: 0.0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-}
+.img_wrap img {
+  height: 300px;
+  border-radius: 100%;
+  box-shadow: 10px 10px 10px rgba(119, 9, 230, 0.6);
+    }
 
-.linkveil:hover {
-  opacity: 1.0;
-
-}
-
-
-article #about {
-  background-image: url("img/coffee.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.img_wrap img:hover {
+  -ms-transform: rotate(20deg); /* IE 9 */
+  -webkit-transform: rotate(20deg); /* Safari */
+  transform: rotate(20deg);
 
 }
 
-article #work {
-  background-image: url("img/maraj.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+/******* CONTACT PAGE *********/
+
+#contact_wrap {
+  padding-top: 90px;
+
 }
-
-article #contact {
-  background-image: url("img/letter.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/*contact page */
-
-/*#form_h1 {
-  height: 100px;
-  width: 50%;
-  display: inlint-block;
-  font-family: 'Amatic SC', serif;
-  font-size: 50px;
-  color: white;
-  text-align: center;
-
-} */
 
 fieldset {
   width: 30%;
-  margin: 0 auto;
+  margin: 10px;
+  padding: 0;
+  display: inline-block;
   color: white;
-  background-color: green:
   border: 2px solid blue;
+  float: left;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+input, textarea {
+  background-color: white;
+  font-family: sans-serif, serif;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border: 1px solid white;
+}
+
+input:focus {
+  background-color: teal;
+  color: white;
+}
+
+input:hover {
+  color: white;
+  background-color: teal;
+  border: 1px solid red;
+}
+
+textarea:hover {
+  color: white;
+  background-color: teal;
+  border: 1px solid red;
+
+}
+
+textarea:focus {
+  background-color: teal;
+  color: white;
+}
+
+
+#submit {
+    color: #444444;
+    font-family: 'Amatic SC', serif;
+    font-size: 30px;
+    text-shadow: 0px 1px 1px #ffffff;
+    border-bottom: 2px solid #b2b2b2;
+    background-color: #b9e4e3;
+}
+
+#submit:hover {
+  color: white;
+  background-color: teal;
+  border: 1px solid red;
 }
 
 label, legend, #contact_p  {
   font-family: 'Amatic SC', serif;
   font-size: 25px;
   color: white;
+}
+
+#jsmessage {
+  height: 400px;
+  width: 400px;
+  background-color: black;
+  display: inline-block;
 
 }
 
-/*About page */
+/******* ABOUT PAGE *********/
 
-article_about {
-width: 100%;
-height: 100%;
-display: block;
-margin-top: 70px;
-margin-left: auto;
-margin-right: auto;
-white-space: nowrap;
-background-color: purple;
-text-align: center;
+
+#about_p {
+  width: 60%;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 100px;
+/*  background-color: rgba(0, 0, 0, 0.5); */
+  text-align: center;
+}
+
+#about_p p {
+  height: 100%;
+  width: 300px;
+  display: inline;
 }
 
 blockquote {
-  width: 100%;
-  color: white;
-  display: block;
-  text-align: center;
+  color: black;
   font-family: 'Amatic SC', serif;
-  font-size: 40px;
+  font-size: 50px;
 }
+
 
 ol {
   margin: 0 auto;
   list-style-type: upper-roman;
   display: inline-block;
+  text-align: left;
 }
 
 ol li {
-  color: white;
+  color: red;
   font-family: 'Amatic SC', serif;
-  font-size: 50px;
+  font-size: 40px;
 
 }
 
 ol li a {
   color: white;
-  border-bottom: 1px dashed white;
+  border-bottom: 1px dashed orange;
   text-decoration: none;
   border-radius: 5px;
   padding: 2px;
-
 }
