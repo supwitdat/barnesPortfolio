@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Brian Barnes Portfolio</title>
+  <title>Contact Brian</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css"  href="main.css" >
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
@@ -28,28 +28,25 @@
 <!--CONTACT FORM--->
 <div id="contact_wrap">
   <fieldset>
-
-    <form action="" method="post">
-      <legend>Send me a message</legend><br /><br />
+<!--I read that the mailto: action isn't compatible across browsers
+but put it as a placeholder for the Deliverable.-->
+    <form action="mailto:?#?@?%#.com" method="post" name="contactForm">
+      <legend>Message me, if you wish:</legend><br /><br />
 
       <label for="email"> Your email address: </label><br />
       <input type="email" name="email" /><br /><br />
 
       <label for="subject">Subject:</label> <br />
-      <input type="text" name="subject" size="20" maxlength="30"> <br />
+      <input type="text" name="subject" size="20" maxlength="30"/> <br />
 
       <p id="contact_p"> Your message: </p>
       <textarea name="message" cols="40" rows="10"></textarea><br />
 
-      <input id="submit" type="submit" value="SEND IT!" />
+      <input id="submit" type="submit" value="SEND IT!"/>
     </form>
 
   </fieldset>
 </div>
-<!-- Save for JS button
-  <div id="jsmessage">
-  </div>
--->
 
 </body>
 

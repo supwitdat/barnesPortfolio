@@ -3,8 +3,11 @@ html, body {
    padding: 0px;
    height: 100%;
    width: 100%;
-   background-color: hsl(150, 65%, 68%);
+
+  background-color: hsl(150, 65%, 68%);
    background-color: #78E2AD;
+
+
 }
 
 
@@ -77,6 +80,7 @@ nav a {
   font-size: 30px;
 }
 
+
 article {
 width: 100%;
 display: block;
@@ -108,8 +112,9 @@ text-align: center;
 /******* CONTACT PAGE *********/
 
 #contact_wrap {
+  width: 100%;
   padding-top: 90px;
-
+  text-align: center;
 }
 
 fieldset {
@@ -118,21 +123,27 @@ fieldset {
   padding: 0;
   display: inline-block;
   color: white;
-  border: 2px solid blue;
-  float: left;
+  border: 2px solid black;
+  border-radius: 15px;
+  background: purple; /* For browsers that do not support gradients */
+     background: -webkit-linear-gradient(purple, black); /* For Safari 5.1 to 6.0 */
+     background: -o-linear-gradient(purple, black); /* For Opera 11.1 to 12.0 */
+     background: -moz-linear-gradient(purple, black); /* For Firefox 3.6 to 15 */
+     background: linear-gradient(purple, black); /* Standard syntax */
 }
 
 form {
   background-color: rgba(0, 0, 0, 0.5);
-
+  border-radius: 15px;
 }
 
 input, textarea {
-  background-color: white;
+  background-color: gray;
   font-family: sans-serif, serif;
   font-size: 16px;
   letter-spacing: 1px;
   border: 1px solid white;
+  border-radius: 5px;
 }
 
 input:focus {
@@ -150,7 +161,6 @@ textarea:hover {
   color: white;
   background-color: teal;
   border: 1px solid red;
-
 }
 
 textarea:focus {
@@ -158,14 +168,19 @@ textarea:focus {
   color: white;
 }
 
-
 #submit {
-    color: #444444;
+    margin: 5px 0 10px 0;
+    color: white;
     font-family: 'Amatic SC', serif;
     font-size: 30px;
     text-shadow: 0px 1px 1px #ffffff;
     border-bottom: 2px solid #b2b2b2;
     background-color: #b9e4e3;
+    background: gray; /* For browsers that do not support gradients */
+       background: -webkit-linear-gradient(purple, darkgray); /* For Safari 5.1 to 6.0 */
+       background: -o-linear-gradient(purple, darkgray); /* For Opera 11.1 to 12.0 */
+       background: -moz-linear-gradient(purple, darkgray); /* For Firefox 3.6 to 15 */
+       background: linear-gradient(purple, darkgray); /* Standard syntax */ ;
 }
 
 #submit:hover {
